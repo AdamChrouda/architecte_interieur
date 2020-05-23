@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'amblelight_condenseditalic';
+    src: url('amble_lightcondenseditalic_macroman/Amble-LightCondenseditalic-webfont.eot');
+    src: url('amble_lightcondenseditalic_macroman/Amble-LightCondenseditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('amble_lightcondenseditalic_macroman/Amble-LightCondenseditalic-webfont.woff2') format('woff2'),
+         url('amble_lightcondenseditalic_macroman/Amble-LightCondenseditalic-webfont.woff') format('woff'),
+         url('amble_lightcondenseditalic_macroman/Amble-LightCondenseditalic-webfont.ttf') format('truetype'),
+         url('amble_lightcondenseditalic_macroman/Amble-LightCondenseditalic-webfont.svg#amblelight_condensed_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amblelight_condensed';
+    src: url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.eot');
+    src: url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.woff2') format('woff2'),
+         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.woff') format('woff'),
+         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.ttf') format('truetype'),
+         url('amble_lightcondensed_macroman/Amble-LightCondensed-webfont.svg#amblelight_condensed_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Dayrom';
+    src: url('dayrom/dayrom.eot');
+    src: url('dayrom/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('dayrom/dayrom.woff') format('woff'),
+         url('dayrom/dayrom.ttf') format('truetype'),
+         url('dayrom/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (max-width: 576px){
+    header, nav ul{
+        flex-direction: column;
+       
+    }  
+    header h1{
+        background-color: #FEE9BF;
+        box-shadow: 15px 9px 9px #FFE6AE;
+    } 
+} 
+@media (min-width: 576px) and (max-width: 768px){
+    header, nav ul{
+        flex-direction: column;
+       
+    } 
+    header h1{
+        background-color: #FEE9BF;
+        box-shadow: 15px 9px 9px #FFE6AE;
+    }  
+} 
+@media (min-width: 768px) and (max-width: 992px){
+    header, nav ul{
+        flex-direction: column;
+       
+    } 
+    header h1{
+        background-color: #FEE9BF;
+        box-shadow: 15px 9px 9px #FFE6AE;
+    }  
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    header{
+        background-color: #FEE9BF;
+        box-shadow: 15px 9px 9px #FFE6AE;
+    }
+    nav ul li{
+        margin-right: 30px;
+    }
+    nav a{
+        padding-bottom: 15px;
+    }
+} 
+@media (min-width: 1200px){
+    header{
+        background-color: #FEE9BF;
+        box-shadow: 15px 9px 9px #FFE6AE;
+    }
+    nav ul li{
+        margin-right: 35px;
+    }
+    nav a{
+        padding-bottom: 15px;
+    }
+}
+body{
+    background-image: url('images/fond_jaune.png'); 
+    font-family: 'amble_lightcondensed';
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    text-align: left;
+    color: #343434;
+    font-family: 'amblelight_condenseditalic';
+    margin-left: 13px;
+    font-size: 2.7em;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    font-family: 'amblelight_condensed';
+
+}
+nav a{
+    font-size: 2em;
+    color: #343434;
+    text-decoration: none;
+}
+nav a:hover{
+    border-bottom:  4.25px solid wheat;
+    box-shadow: 6px 0px 10px white;
+    font-family: 'amblelight_condenseditalic';
+}
+h2{
+    font-family: 'amblelight_condensed';
+    margin-left: 120px;
+}
+article{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    background-color: #FEE9BF;
+    box-shadow: 15px 9px 9px #FFE6AE;
+    width: 55%;
+}
+img{
+    margin-left: 35px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 147px 147px 147px 147px;
+    grid-template-rows: 60px 60px 60px ;
+    font-size:  1.6em;
+    padding-top: 30px;
+}
+.container>:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(3){
+    grid-column: 3;
+    grid-row: 1;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(4){
+    grid-column: 4;
+    grid-row: 1;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(5){
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(6){
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(7){
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+.container>:nth-child(8){
+    grid-column: 4;
+    grid-row: 2;
+    justify-content: stretch;
+    border: 2px solid #181818;
+}
+footer{
+    background-color: #FEE9BF;
+    box-shadow: 15px 9px 9px #FFE6AE;
+    font-family: 'Dayrom';
+    font-size: 1.1em;
+}
+footer a{
+    text-decoration: none;
+    background-color:peru;
+    border-radius: 7px;
+    color:white;
+}
